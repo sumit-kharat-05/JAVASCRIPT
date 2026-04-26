@@ -17,3 +17,130 @@ const product = {
 };
 
 console.log(product);
+
+//Artimatic Operators
+let a = 10;
+let b = 5;
+
+console.log("a + b =",a + b);
+console.log("a - b =",a - b);
+console.log("a * b =",a * b);
+console.log("a / b =",a / b);
+
+//Modules
+console.log("a % b =",a % b);
+
+//Exponentiation
+console.log("a ** b =",a ** b);
+
+//Increment and Decrement
+a++;
+console.log("a =", a);
+
+b--;
+console.log("b =", b);
+
+//Assignment Operators
+let c = 10;
+let d = 20;
+
+c += 5;
+console.log("c =", c);
+
+c -= 5;
+console.log("c =", c);
+
+c *= 3;
+console.log("c =", c);
+
+c /= 2;
+console.log("c =", c);
+
+
+//Comparison Operators
+let e = 20;
+let f = 40;
+
+console.log("20 == 40", e == f);
+console.log("20 === 40", e === f); 
+console.log("20 != 40", e != f);
+console.log("20 !== 40", e !== f);
+console.log("20 < 40", e < f);
+console.log("20 > 40", e > f);
+console.log("20 <= 40", e <= f);
+console.log("20 >= 40", e >= f);
+
+//Logical Operators
+let g = 30;
+let h = 40;
+
+console.log("30 > 40 && 30 < 40", g > h && g < h);
+console.log("30 > 40 || 30 < 40", g > h || g < h);
+console.log("30 > 40 ! 30 < 40", g > h , g < h);
+
+//Conditional Statements
+let Age=18;
+let mode = "dark";
+let num = 10;
+let color;
+
+//If Statement
+if(Age <= 18)
+{
+    console.log("You Can Not Vote");
+}
+
+//If-Else Statement
+ if(mode === "dark")
+ {
+    color = "black";
+ }
+else
+ {
+    color = "white";
+ }
+
+ console.log(color);
+
+ 
+ if(Age >= 18)
+ {
+    console.log("You Can Vote");
+ }
+ else
+ {
+    console.log("You Can Not Vote");
+ }
+
+
+ if(num % 2 === 0)
+ {
+    console.log("Even");
+ }
+ else
+ {
+    console.log("Odd");
+ }
+
+  //Else-If Statement
+  if(mode === "dark")
+ {
+    color = "black";
+ }
+else if(mode === "light")
+{
+    color = "white";
+}
+else if(mode === "blue")
+{
+    color = "blue";
+}
+else
+{
+    color = "unknown";
+}           
+ console.log(color);
+
+ //Ternary Operator
+ let age = 25;
+ age >= 18 ? console.log("You Can Vote") : console.log("You Can Not Vote");
