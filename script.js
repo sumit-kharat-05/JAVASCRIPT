@@ -144,3 +144,42 @@ else
  //Ternary Operator
  let age = 25;
  age >= 18 ? console.log("You Can Vote") : console.log("You Can Not Vote");
+
+ // Que3
+
+ let numm = prompt("Enter A Number: ");
+ if(numm % 5 === 0)
+ {
+   console.log(numm,"multiple of 5");
+ }
+ else
+ {
+   console.log(numm,"not multiple of 5");
+ }
+
+ //Que4
+
+ let score = 92;
+ let grade;
+
+ if(score >= 90 && score <= 100)
+ {
+   grade = "A";
+ }
+ else if(score >= 70 && score <= 89)
+ {
+   grade = "B";
+ }
+ else if(score >= 60 && score <= 79)
+ {
+   grade = "C";
+ }
+ else if(score >= 50 && score <= 59)
+ {
+   grade = "D";
+ }
+ else if(score >= 0 && score <= 45)
+ {
+   grade = "F";
+ }
+ console.log("This Is Your Grade: ",grade);
