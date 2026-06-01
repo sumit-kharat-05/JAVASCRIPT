@@ -183,3 +183,52 @@ else
    grade = "F";
  }
  console.log("This Is Your Grade: ",grade);
+
+ //For Loops
+
+ let sum = 0;
+ for (let i=1; i<=5; i++)
+ {
+  sum = sum + i;
+ }
+ console.log("sum =",sum);
+
+ //While Loop
+
+ let i=1;
+ while(i<=5)
+{
+  console.log("i=", i);
+  i++;
+}
+
+//Do While Loop
+
+let j=20;
+do{
+  console.log("SUMIT");
+  j++;
+} while(j<=10);
+
+//For Of Loop
+
+let str = "JavaScript";
+
+let size = 0;
+for(let val of str)
+{
+console.log("val=",val);
+size++;
+}
+console.log("String Size=",size);
+
+//For In Loop
+
+let studentt ={
+  name:"sumit",
+  Age:"20",
+  Cgpa:"8.0",
+  isPass:"true"
+}
+for(let i in student)
+console.log(i);
