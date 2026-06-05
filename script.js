@@ -1,4 +1,4 @@
-
+//Lecture No 01
 console.log("Hello, World!");
 const student ={
     fullName : "Sumit kharat",
@@ -7,7 +7,7 @@ const student ={
 }
 console.log(student);
 
-// Que1
+//Lecture No 01 Que1
 
 const product = {
     tittle : "Ball Pen",
@@ -18,6 +18,7 @@ const product = {
 
 console.log(product);
 
+//Lecture No 02
 //Artimatic Operators
 let a = 10;
 let b = 5;
@@ -145,7 +146,7 @@ else
  let age = 25;
  age >= 18 ? console.log("You Can Vote") : console.log("You Can Not Vote");
 
- // Que3
+ //Lecture No 02 Que1
 
  let numm = prompt("Enter A Number: ");
  if(numm % 5 === 0)
@@ -157,7 +158,7 @@ else
    console.log(numm,"not multiple of 5");
  }
 
- //Que4
+ //Lecture No 02 Que2
 
  let score = 92;
  let grade;
@@ -184,6 +185,7 @@ else
  }
  console.log("This Is Your Grade: ",grade);
 
+ //Lecture No 03
  //For Loops
 
  let sum = 0;
@@ -232,3 +234,77 @@ let studentt ={
 }
 for(let i in student)
 console.log(i);
+
+//Lecture No 03 Que1
+
+for (let num=0; num<=100; num++)
+{
+    if(num % 2 !== 0)
+    {
+      console.log("num =", num)   
+    }
+}
+
+//Lecture No 03 Que2
+// let gameNum = 25;
+// let userNum = prompt("Guess The Game Number :");
+
+// while(userNum != gameNum)
+// {
+//   userNum = prompt("You Entered Wrong Number , Guess Again");
+// }
+// console.log("Congratulations You Entered Correct Number");
+
+//String
+
+let strr = "SUMIT KHARAT"
+
+console.log (strr[8]);
+
+//Template Literals
+
+let obj={
+  item : "pen",
+  price : 20
+}
+
+let output = `The Price Of ${obj.item} is \$${obj.price} Rupees`;
+console.log(output);
+
+//Escape Characters
+
+let strrr = "SUMIT\tKHARAT"
+console.log(strrr.length);
+
+console.log("SUMIT\nKHARAT");
+
+//String Methods
+
+let str1 = "sumit kharat"
+let newstr = str1.toUpperCase();
+console.log(str1);
+console.log(newstr);
+
+let str2 = "SUMIT KHARAT"
+let newstr1 = str2.toLowerCase();
+console.log(str2);
+console.log(newstr1);
+
+let str3 = "   HTML CSS JS   "
+console.log(str3.trim());
+
+let str4 = "0123456789"
+console.log(str4.slice(2,5));
+
+let str5 = "shivaji"
+let str6 = "Maharaj"
+console.log(str5.concat(str6));
+
+let str7 = "SUMIT"
+console.log(str7.replace("SU","A"));
+
+//Lecture No 03 Que 03
+
+let fullname = prompt("Enter Your FullName Without Space");
+let username = "@" + fullname + fullname.length;
+console.log(username);
