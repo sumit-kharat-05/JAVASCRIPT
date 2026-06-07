@@ -1,4 +1,4 @@
-//Lecture No 01
+//Lecture No 01//
 console.log("Hello, World!");
 const student ={
     fullName : "Sumit kharat",
@@ -7,7 +7,7 @@ const student ={
 }
 console.log(student);
 
-//Lecture No 01 Que1
+//Lecture No 01 Que1//
 
 const product = {
     tittle : "Ball Pen",
@@ -18,8 +18,8 @@ const product = {
 
 console.log(product);
 
-//Lecture No 02
-//Artimatic Operators
+//Lecture No 02//
+//Artimatic Operators//
 let a = 10;
 let b = 5;
 
@@ -28,20 +28,20 @@ console.log("a - b =",a - b);
 console.log("a * b =",a * b);
 console.log("a / b =",a / b);
 
-//Modules
+//Modules//
 console.log("a % b =",a % b);
 
-//Exponentiation
+//Exponentiation//
 console.log("a ** b =",a ** b);
 
-//Increment and Decrement
+//Increment and Decrement//
 a++;
 console.log("a =", a);
 
 b--;
 console.log("b =", b);
 
-//Assignment Operators
+//Assignment Operators//
 let c = 10;
 let d = 20;
 
@@ -58,7 +58,7 @@ c /= 2;
 console.log("c =", c);
 
 
-//Comparison Operators
+//Comparison Operators//
 let e = 20;
 let f = 40;
 
@@ -71,7 +71,7 @@ console.log("20 > 40", e > f);
 console.log("20 <= 40", e <= f);
 console.log("20 >= 40", e >= f);
 
-//Logical Operators
+//Logical Operators//
 let g = 30;
 let h = 40;
 
@@ -79,19 +79,19 @@ console.log("30 > 40 && 30 < 40", g > h && g < h);
 console.log("30 > 40 || 30 < 40", g > h || g < h);
 console.log("30 > 40 ! 30 < 40", g > h , g < h);
 
-//Conditional Statements
+//Conditional Statements//
 let Age=18;
 let mode = "dark";
 let num = 10;
 let color;
 
-//If Statement
+//If Statement//
 if(Age <= 18)
 {
     console.log("You Can Not Vote");
 }
 
-//If-Else Statement
+//If-Else Statement//
  if(mode === "dark")
  {
     color = "black";
@@ -123,7 +123,7 @@ else
     console.log("Odd");
  }
 
-  //Else-If Statement
+  //Else-If Statement//
   if(mode === "dark")
  {
     color = "black";
@@ -142,11 +142,11 @@ else
 }           
  console.log(color);
 
- //Ternary Operator
+ //Ternary Operator//
  let age = 25;
  age >= 18 ? console.log("You Can Vote") : console.log("You Can Not Vote");
 
- //Lecture No 02 Que1
+ //Lecture No 02 Que1//
 
  let numm = prompt("Enter A Number: ");
  if(numm % 5 === 0)
@@ -158,7 +158,7 @@ else
    console.log(numm,"not multiple of 5");
  }
 
- //Lecture No 02 Que2
+ //Lecture No 02 Que2//
 
  let score = 92;
  let grade;
@@ -185,8 +185,8 @@ else
  }
  console.log("This Is Your Grade: ",grade);
 
- //Lecture No 03
- //For Loops
+ //Lecture No 03//
+ //For Loops//
 
  let sum = 0;
  for (let i=1; i<=5; i++)
@@ -195,7 +195,7 @@ else
  }
  console.log("sum =",sum);
 
- //While Loop
+ //While Loop//
 
  let i=1;
  while(i<=5)
@@ -204,7 +204,7 @@ else
   i++;
 }
 
-//Do While Loop
+//Do While Loop//
 
 let j=20;
 do{
@@ -212,7 +212,7 @@ do{
   j++;
 } while(j<=10);
 
-//For Of Loop
+//For Of Loop//
 
 let str = "JavaScript";
 
@@ -224,7 +224,7 @@ size++;
 }
 console.log("String Size=",size);
 
-//For In Loop
+//For In Loop//
 
 let studentt ={
   name:"sumit",
@@ -235,7 +235,7 @@ let studentt ={
 for(let i in student)
 console.log(i);
 
-//Lecture No 03 Que1
+//Lecture No 03 Que1//
 
 for (let num=0; num<=100; num++)
 {
@@ -245,7 +245,7 @@ for (let num=0; num<=100; num++)
     }
 }
 
-//Lecture No 03 Que2
+//Lecture No 03 Que2//
 // let gameNum = 25;
 // let userNum = prompt("Guess The Game Number :");
 
@@ -255,13 +255,13 @@ for (let num=0; num<=100; num++)
 // }
 // console.log("Congratulations You Entered Correct Number");
 
-//String
+//String//
 
 let strr = "SUMIT KHARAT"
 
 console.log (strr[8]);
 
-//Template Literals
+//Template Literals//
 
 let obj={
   item : "pen",
@@ -271,14 +271,14 @@ let obj={
 let output = `The Price Of ${obj.item} is \$${obj.price} Rupees`;
 console.log(output);
 
-//Escape Characters
+//Escape Characters//
 
 let strrr = "SUMIT\tKHARAT"
 console.log(strrr.length);
 
 console.log("SUMIT\nKHARAT");
 
-//String Methods
+//String Methods//
 
 let str1 = "sumit kharat"
 let newstr = str1.toUpperCase();
@@ -303,8 +303,102 @@ console.log(str5.concat(str6));
 let str7 = "SUMIT"
 console.log(str7.replace("SU","A"));
 
-//Lecture No 03 Que 03
+//Lecture No 03 Que 03//
 
-let fullname = prompt("Enter Your FullName Without Space");
-let username = "@" + fullname + fullname.length;
-console.log(username);
+// let fullname = prompt("Enter Your FullName Without Space");
+// let username = "@" + fullname + fullname.length;
+// console.log(username);
+
+//Lecture No 04//
+
+//Arrays//
+
+let marks = [97, 65, 56, 46, 38];
+console.log(marks);
+
+//Array Indices//
+
+let names = ['a', 'b', 'c', 'd'];
+console.log(names[2]);
+
+//Looping Over An Array//
+let   heroies = ['ironman','thor','hulk','shaktiman','spiderman'];
+for(let hero=0; hero < heroies.length; hero++)
+{
+  console.log(heroies [hero])
+}
+
+//Lecture No 04 Que 01//
+
+let markss = [85,97,44,37,76,60];
+let sum1 = 0;
+for (let val of markss)
+{
+  sum1 += val;
+}
+
+let avg = sum1 / markss.length;
+console.log(`avg marks Of The Class = ${avg}`);
+// console.log(sum1);
+
+//Lecture No 04 Que 02//
+
+let items1 = [250,645,300,900,50]
+
+let i1 = 0;
+for (let valu of items1)
+{
+  console.log(`value at index ${i1} = ${valu}`);
+  let offer = valu / 10;
+  items1 [i1] = items1 [i1] - offer;
+  console.log(`value after offer =${items1[i1]}`);
+  i1++;
+}
+
+//Array Methods//
+//push()//
+
+// let fooditems = ["Potatao","Banana","Tomato","Apple","Graphes"]
+
+// fooditems.push("Chips","Guava","Paneer");
+
+// console.log(fooditems);
+
+//pop()//
+
+let fooditems = ["Potatao","Banana","Tomato","Apple","Graphes"]
+console.log(fooditems);
+let deletedItem=fooditems.pop();
+console.log(fooditems);
+console.log("Deleted" , deletedItem);
+
+//tostring() + concat()//
+
+let marvelheroies = ["thor","spiderman","ironman"];
+let dcheroies = ["superman","batman"];
+
+let heroies1 = marvelheroies.concat(dcheroies);
+console.log(heroies1);
+
+//slice()//
+
+let marvelheroiess = ["thor","spiderman","ironman"];
+console.log(marvelheroiess);
+console.log(marvelheroiess.slice(0,2));
+
+//splice()//
+
+let arr = [10,20,30,40,50];
+arr.splice(2,2,101,102);
+console.log(arr);
+
+//Lecture No 04 Que 03//
+
+let companies = ["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
+// DeletedItems = companies.shift();
+// console.log("Delete " , DeletedItems);
+companies.splice(2,1,"Ola");
+console.log(companies);
+
+companies.push("Amazon");
+console.log(companies);
