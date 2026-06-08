@@ -402,3 +402,43 @@ console.log(companies);
 
 companies.push("Amazon");
 console.log(companies);
+
+//Lecture No 05//
+
+//Functions//
+
+function sum2(x,y)
+{
+  console.log(x+y); 
+}
+sum2(55,45);
+
+//Arrow Functions//
+
+const arrowMul = (a,b) => 
+{
+  console.log(a*b);
+}
+arrowMul(5,6);
+
+//Lecture No 05 Que 01//
+
+function countvowels (str1) 
+{
+  let count2 = 0;
+  for(const char of str1)
+  {
+    if(char === "a" || char === "e" || char === "i" || char === "o" || char === "u")
+    {
+      count2 ++;
+    }
+  }
+  console.log(count2);
+}
+console.log(countvowels("sumit kharat"));
+
+
+
+
+
+
