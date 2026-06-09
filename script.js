@@ -148,15 +148,15 @@ else
 
  //Lecture No 02 Que1//
 
- let numm = prompt("Enter A Number: ");
- if(numm % 5 === 0)
- {
-   console.log(numm,"multiple of 5");
- }
- else
- {
-   console.log(numm,"not multiple of 5");
- }
+//  let numm = prompt("Enter A Number: ");
+//  if(numm % 5 === 0)
+//  {
+//    console.log(numm,"multiple of 5");
+//  }
+//  else
+//  {
+//    console.log(numm,"not multiple of 5");
+//  }
 
  //Lecture No 02 Que2//
 
@@ -437,8 +437,89 @@ function countvowels (str1)
 }
 console.log(countvowels("sumit kharat"));
 
+//Lecture No 05 Que 02//
+
+let arr1 = ["Nagpur" , "Pune" , "Mumbai" , "Nashik" , "Sambhajinagar"];
+
+arr1.forEach((val ,idx1 ,arr1) => {
+  console.log(val.toUpperCase(),idx1, arr1);
+});
+
+//Lecture No 05 Que 03//
+
+let nums= [1,2,3,4,5];
+
+nums.forEach((num) =>
+{
+  console.log(num*num);
+});
+
+//Array Methods//
+//map()//
+
+let nums1 = [10,20,30,40,50];
+
+nums1.map((nums) =>
+{
+  console.log(nums*nums);
+});
 
 
+//filter()//
 
+let nums2 = [1,2,3,4,5,6,7,8,9,10];
 
+let evenarr1 = nums2.filter((num1) =>
+{
+  return num1 % 2 === 0;
+});
 
+console.log(evenarr1);
+
+//reduce()//
+
+let nums3 = [1,2,3,4,5];
+
+const sums  = nums3.reduce((res,currval) =>
+{
+  return res + currval;
+});
+
+console.log(sums);
+
+//Lecture No 05 Que 04//
+
+let marks1 = [85,96,63,85,92,91,85,88,90,95];
+
+let toppers = marks1.filter((mark) =>
+{
+return mark > 90;
+});
+console.log(toppers);
+
+//Lecture No 05 Que 05//
+
+let n = prompt ("Enter Number :");
+
+let arr2 = [];
+
+for(i = 1;i <= n; i++)
+{
+  arr2[i-1] = i;
+}
+
+console.log(arr2);
+
+let sums1 = arr2.reduce((res,currval1) =>
+{
+  return res + currval1;
+});
+
+console.log(sums1);
+
+let factorial = arr2.reduce((res,currval1) =>
+{
+  return res * currval1;
+});
+
+console.log(factorial);
