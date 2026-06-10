@@ -499,27 +499,68 @@ console.log(toppers);
 
 //Lecture No 05 Que 05//
 
-let n = prompt ("Enter Number :");
+// let n = prompt ("Enter Number :");
 
-let arr2 = [];
+// let arr2 = [];
 
-for(i = 1;i <= n; i++)
-{
-  arr2[i-1] = i;
-}
+// for(i = 1;i <= n; i++)
+// {
+//   arr2[i-1] = i;
+// }
 
-console.log(arr2);
+// console.log(arr2);
 
-let sums1 = arr2.reduce((res,currval1) =>
-{
-  return res + currval1;
-});
+// let sums1 = arr2.reduce((res,currval1) =>
+// {
+//   return res + currval1;
+// });
 
-console.log(sums1);
+// console.log(sums1);
 
-let factorial = arr2.reduce((res,currval1) =>
-{
-  return res * currval1;
-});
+// let factorial = arr2.reduce((res,currval1) =>
+// {
+//   return res * currval1;
+// });
 
-console.log(factorial);
+// console.log(factorial);
+
+//Lecture No 06//
+
+//Document Object Model (DOM)//
+
+console.dir(document);
+console.log(document.body);
+
+let heading = document.getElementById("head1");
+console.log(heading);
+
+let heading1 = document.getElementById("head2");
+console.log(heading1);
+
+let heading2 = document.getElementById("head3");
+console.log(heading2);
+
+let heading01 = document.getElementsByClassName("h01");
+console.dir(heading01);
+console.log(heading01);
+
+let heading02 = document.getElementsByClassName("h02");
+console.dir(heading02);
+console.log(heading02);
+
+let heading03 = document.getElementsByClassName("h03");
+console.dir(heading03);
+console.log(heading03);
+
+let element = document.getElementsByTagName("h3");
+console.log(element); 
+
+let element1 = document.querySelector("h3");
+console.log(element1); 
+
+let element2 = document.querySelectorAll("h3");
+console.log(element2); 
+
+let div = document.querySelector("div");
+console.log(div);
+div.innerText;

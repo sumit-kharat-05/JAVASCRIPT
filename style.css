@@ -1,5 +1,30 @@
-h3{
+#head1{
     background-color: black;
     color: white;
-  
 }
+
+#head2{
+    background-color: yellow;
+    color: white;
+}
+
+#head3{
+    background-color: orange;
+    color: white;
+}
+
+.h01{
+    background-color: green;
+    color: white; 
+}
+
+.h02{
+    background-color: blue;
+    color: white; 
+}
+
+.h03{
+    background-color: purple;
+    color: white; 
+}
+
