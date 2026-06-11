@@ -28,3 +28,17 @@
     color: white; 
 }
 
+h2{
+    background-color: orange;
+
+}
+
+.box
+{
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border: solid 1px black;
+    text-align: center;
+    background-color: aquamarine;
+}

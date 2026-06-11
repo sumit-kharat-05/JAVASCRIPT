@@ -561,6 +561,20 @@ console.log(element1);
 let element2 = document.querySelectorAll("h3");
 console.log(element2); 
 
-let div = document.querySelector("div");
+// let div = document.querySelector("div");
+// console.log(div);
+// div.innerText;
+
+//Lecture No 06 Que 01//
+
+let h2 = document.querySelector("h2");
+
+console.log(h2.innerText);
+
+h2.innerText = h2.innerText + " From Apna College Students";
+
+//Lecture No 06 Que 02//
+
+let div = document.querySelectorAll(".box");
+
 console.log(div);
-div.innerText;
