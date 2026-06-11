@@ -637,14 +637,61 @@ para.style.backgroundColor = "Orange";
 
 //Lecture No 07 Que 01//
 
-let newBtn = document.createElement("button");
-newBtn.innerText = "Click Me !";
+// let newBtn = document.createElement("button");
+// newBtn.innerText = "Click Me !";
 
-newBtn.style.color = "white";
-newBtn.style.backgroundColor  = "red";
+// newBtn.style.color = "white";
+// newBtn.style.backgroundColor  = "red";
 
-document.querySelector("body").prepend(newBtn);
+// document.querySelector("body").prepend(newBtn);
 
 //Lecture No 07 Que 02//
 
 let para1 = document.querySelector("p"); 
+
+//Lecture No 08//
+
+// let btn1 = document.querySelector("#btn1");
+
+// btn1.onclick = (() => 
+// {
+//   console.log("btn1 was clicked");
+//   let a = 25;
+//   a++;
+//   console.log(a);
+// });
+
+// let div = document.querySelector("#d2");
+// div.onmouseover = (() =>
+// {
+// console.log("You Are Inside Div");
+// });
+
+// let btn1 = document.querySelector("#btn1");
+
+// btn1.addEventListener ("click" , (evt) => 
+// {
+//   console.log("btn1 was clicked");
+
+// });
+
+//Lecture No 08 Que 01//
+
+let btn = document.querySelector("#b1");
+let currmode = "light";
+
+btn.addEventListener ("click" , () =>
+{
+if(currmode === "light")
+{
+  currmode = "dark";
+  document.querySelector("body").style.background = "black";
+}
+else
+{
+  currmode = "light";
+  document.querySelector("body").style.background = "white";
+}
+console.log(currmode);
+});
+
