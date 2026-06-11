@@ -1,3 +1,5 @@
+
+
 //Lecture No 01//
 console.log("Hello, World!");
 const student ={
@@ -575,6 +577,74 @@ h2.innerText = h2.innerText + " From Apna College Students";
 
 //Lecture No 06 Que 02//
 
-let div = document.querySelectorAll(".box");
+// let div = document.querySelectorAll(".box");
 
-console.log(div);
+// console.log(div);
+
+//Lecture No 07//
+
+//Document Object Model (DOM) Part - 02//
+
+// let para = document.querySelector(".para")
+// console.log(para.getAttribute("class"));
+
+
+let para = document.querySelector(".para");
+
+para.setAttribute("class", "paras");
+
+console.log(para.getAttribute("class"));
+
+para.style.backgroundColor = "Orange";
+
+//DOM Manipulation Insert Element//
+
+// let div = document.querySelector("#d1");
+// let btn = document.querySelector("button");
+// console.log(div);
+// console.log(btn);
+// div.append(btn);
+
+// let div = document.querySelector("#d1");
+// let btn = document.querySelector("button");
+// console.log(div);
+// console.log(btn);
+// div.prepend(btn);
+
+// let div = document.querySelector("#d1");
+// let btn = document.querySelector("button");
+// console.log(div);
+// console.log(btn);
+// div.after(btn);
+
+// let div = document.querySelector("#d1");
+// let btn = document.querySelector("button");
+// console.log(div);
+// console.log(btn);
+// div.before(btn);
+
+// let div = document.querySelector("#d1");
+// let btn = document.querySelector("button");
+// console.log(div);
+// console.log(btn);
+// div.remove(btn);
+
+// let div = document.querySelector("#d1");
+// let btn = document.querySelector("button");
+// console.log(div);
+// console.log(btn);
+// div.appendchild(btn);
+
+//Lecture No 07 Que 01//
+
+let newBtn = document.createElement("button");
+newBtn.innerText = "Click Me !";
+
+newBtn.style.color = "white";
+newBtn.style.backgroundColor  = "red";
+
+document.querySelector("body").prepend(newBtn);
+
+//Lecture No 07 Que 02//
+
+let para1 = document.querySelector("p"); 

@@ -42,3 +42,30 @@ h2{
     text-align: center;
     background-color: aquamarine;
 }
+
+.para
+{
+    background-color: brown;
+}
+
+#d1
+{
+    height: 200px;
+    width: 100px;
+    background-color: darkgoldenrod;
+}
+
+/* #btn1
+{
+    background-color: red;
+    color: white;
+} */
+
+.p1{
+    color:red;
+}
+
+.newClass
+{
+    background-color: orange;
+}
