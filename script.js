@@ -695,3 +695,125 @@ else
 console.log(currmode);
 });
 
+//Lecture No 11//
+
+//Object//
+
+// const student3 =
+// {
+//   fullName : "Sumit Kharat",
+//   Marks : 91.6,
+//   printMarks:function()
+//   {
+// console.log("Marks=",this.Marks);
+//   },
+// };
+// console.log(student3);
+
+const employee = {
+  calcTax () {
+    console.log("Tax Rate Is 10%");
+  },
+};
+
+const karanArjun = {
+ salary : 50000,
+}
+
+karanArjun.__proto__=employee;
+
+//Classes//
+
+class toyotaCar{
+  constructor(brand,mileage)
+  {
+   console.log("creating new object");
+   this.brand;
+   this.mileage;
+  }
+}
+let fortuner = new toyotaCar("fortuner",10);
+console.log(fortuner);
+let lexus = new toyotaCar("lexus",10);
+console.log(lexus);
+
+//Inheritance//
+
+class person 
+{
+  eat()
+  {
+    console.log("eat");
+  }
+  
+  sleep()
+  {
+    console.log("sleep");
+  }
+}
+
+class engineer extends person
+{
+  work()
+  {
+    console.log("Do Something");
+  }
+}
+
+let studentobj = new engineer();
+console.log(engineer);
+
+//Lecture No 11 Que 01 & 02//
+
+let DATA = "Secret Information";
+
+class user 
+{
+  constructor(name,email)
+  {
+    this.name=name;
+    this.email=email;
+  }
+
+  viewData()
+  {
+    console.log("data",DATA);
+  }
+}
+class admin extends user
+{
+  constructor(name,email)
+  {
+  super(name,email)
+  }
+  editData()
+  {
+    DATA = "Some New Value";
+  }
+}
+
+let student1 = new user("sumit","sumit@gmail.com");
+let student2 = new user("kunal","kunal@gmail.com");
+
+student1.viewData();
+student2.viewData();
+
+//Try-Catch-Block
+
+let s=10;
+let h=10;
+console.log("s=",s);
+console.log("h=",h);
+console.log("s+h=",s+h);
+console.log("s+h=",s+h);
+try{
+console.log("s+h=",s+h);
+}
+catch(err)
+{
+console.log(err);
+}
+console.log("s+h=",s+h);
+console.log("s+h=",s+h);
+console.log("s+h=",s+h);
+
