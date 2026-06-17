@@ -710,110 +710,266 @@ console.log(currmode);
 // };
 // console.log(student3);
 
-const employee = {
-  calcTax () {
-    console.log("Tax Rate Is 10%");
-  },
-};
+// const employee = {
+//   calcTax () {
+//     console.log("Tax Rate Is 10%");
+//   },
+// };
 
-const karanArjun = {
- salary : 50000,
-}
+// const karanArjun = {
+//  salary : 50000,
+// }
 
-karanArjun.__proto__=employee;
+// karanArjun.__proto__=employee;
 
 //Classes//
 
-class toyotaCar{
-  constructor(brand,mileage)
-  {
-   console.log("creating new object");
-   this.brand;
-   this.mileage;
-  }
-}
-let fortuner = new toyotaCar("fortuner",10);
-console.log(fortuner);
-let lexus = new toyotaCar("lexus",10);
-console.log(lexus);
+// class toyotaCar{
+//   constructor(brand,mileage)
+//   {
+//    console.log("creating new object");
+//    this.brand;
+//    this.mileage;
+//   }
+// }
+// let fortuner = new toyotaCar("fortuner",10);
+// console.log(fortuner);
+// let lexus = new toyotaCar("lexus",10);
+// console.log(lexus);
 
-//Inheritance//
+ //Inheritance//
 
-class person 
-{
-  eat()
-  {
-    console.log("eat");
-  }
+// class person 
+// {
+//   eat()
+//   {
+//     console.log("eat");
+//   }
   
-  sleep()
-  {
-    console.log("sleep");
-  }
-}
+//   sleep()
+//   {
+//     console.log("sleep");
+//   }
+// }
 
-class engineer extends person
-{
-  work()
-  {
-    console.log("Do Something");
-  }
-}
+// class engineer extends person
+// {
+//   work()
+//   {
+//     console.log("Do Something");
+//   }
+// }
 
-let studentobj = new engineer();
-console.log(engineer);
+// let studentobj = new engineer();
+// console.log(engineer);
 
 //Lecture No 11 Que 01 & 02//
 
-let DATA = "Secret Information";
+// let DATA = "Secret Information";
 
-class user 
-{
-  constructor(name,email)
-  {
-    this.name=name;
-    this.email=email;
-  }
+// class user 
+// {
+//   constructor(name,email)
+//   {
+//     this.name=name;
+//     this.email=email;
+//   }
 
-  viewData()
-  {
-    console.log("data",DATA);
-  }
-}
-class admin extends user
-{
-  constructor(name,email)
-  {
-  super(name,email)
-  }
-  editData()
-  {
-    DATA = "Some New Value";
-  }
-}
+//   viewData()
+//   {
+//     console.log("data",DATA);
+//   }
+// }
+// class admin extends user
+// {
+//   constructor(name,email)
+//   {
+//   super(name,email)
+//   }
+//   editData()
+//   {
+//     DATA = "Some New Value";
+//   }
+// }
 
-let student1 = new user("sumit","sumit@gmail.com");
-let student2 = new user("kunal","kunal@gmail.com");
+// let student1 = new user("sumit","sumit@gmail.com");
+// let student2 = new user("kunal","kunal@gmail.com");
 
-student1.viewData();
-student2.viewData();
+// student1.viewData();
+// student2.viewData();
 
 //Try-Catch-Block
 
-let s=10;
-let h=10;
-console.log("s=",s);
-console.log("h=",h);
-console.log("s+h=",s+h);
-console.log("s+h=",s+h);
-try{
-console.log("s+h=",s+h);
-}
-catch(err)
-{
-console.log(err);
-}
-console.log("s+h=",s+h);
-console.log("s+h=",s+h);
-console.log("s+h=",s+h);
+// let s=10;
+// let h=10;
+// console.log("s=",s);
+// console.log("h=",h);
+// console.log("s+h=",s+h);
+// console.log("s+h=",s+h);
+// try{
+// console.log("s+h=",s+h);
+// }
+// catch(err)
+// {
+// console.log(err);
+// }
+// console.log("s+h=",s+h);
+// console.log("s+h=",s+h);
+// console.log("s+h=",s+h);
 
+//Lecture No 12//
+
+// console.log("one");
+// console.log("two");
+
+// setTimeout(()=>
+// {
+//   console.log("SUMIT");
+// },5000);
+
+//callBack//
+
+// function sum3(a,b)
+// {
+//   console.log(a+b);
+// }
+
+// function calculator(a,b,sumCallback)
+// {
+//   sumCallback(a,b);
+// }
+// calculator(1,2,(a,b)=>
+// {
+// console.log(a+b);
+// });
+
+//Callback Hell//
+
+// function getData(dataId,getNextData)
+// {
+//   setTimeout(() => {
+//   console.log("Data",dataId);
+//   if (getNextData) {
+//     getNextData();
+//   }
+//   },2000);
+// }
+
+// getData(1, () =>
+// {
+// console.log("Getting Data 2 .....")
+// getData(2, () =>{
+// console.log("Getting Data 3 .....") 
+// getData(3, () => {
+//   console.log("Getting Data 4 .....")
+// console.log(4)
+// })
+// });
+// });
+
+//Promises//
+
+// const getPromise = () =>
+// {
+//   return new Promise((resolve,reject) => {
+//    console.log("I Am A Promise");
+//    resolve("Success");
+//   });
+// };
+
+// let promise = getPromise();
+// promise.then((res) => {
+// console.log("Promise Fullfilled",res);
+// });
+
+// promise.catch( (err) =>
+// {
+//   console.log("Rejected",err);
+// });
+
+//Promises Chain//
+
+// function asyncFun1()
+// {
+//   return new Promise ((resolve,reject) =>
+//   {
+//     setTimeout (()  =>{
+//     console.log("Data 1");
+//     resolve("Success");
+//     },4000);
+//   });
+// }
+
+// function asyncFun2()
+// {
+//   return new Promise ((resolve,reject) =>
+//   {
+//     setTimeout (()  =>{
+//     console.log("Data 1");
+//     resolve("Success");
+//     },4000);
+//   });
+// }
+
+// console.log("Fetching Data 1 .....");
+// asyncFun1().then((res) =>
+// {
+// console.log("Fetching Data 2 .....");
+// asyncFun2().then((res) =>{});
+// });
+
+// function getData(dataId)
+// {
+//   return new Promise ((resolve,reject) =>
+//   {
+//     setTimeout (()  =>{
+//     console.log("Data",dataId);
+//     resolve("Success");
+//     },5000);
+//   });
+  
+// }
+
+// getData(1)
+// .then((res) => 
+// {
+// return getData(2);
+// })
+// .then((res) => 
+// {
+// return getData(3);
+// })
+// .then((res) => 
+// {
+// return getData(res);
+// });
+
+//Async Await//
+
+function api()
+{
+  return new Promise ((resolve,reject) =>
+    {
+      setTimeout (() =>
+      {
+        console.log("Whether Data");
+        resolve(200);
+      },2000);
+    });
+}
+
+async function getWhetherData() {
+  await api();
+}
+
+function getData(dataId)
+{
+  return new Promise ((resolve,reject) =>
+  {
+    setTimeout (()  =>{
+    console.log("Data",dataId);
+    resolve("Success");
+    },5000);
+  });
+  
+}
