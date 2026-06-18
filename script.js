@@ -946,30 +946,43 @@ console.log(currmode);
 
 //Async Await//
 
-function api()
-{
-  return new Promise ((resolve,reject) =>
-    {
-      setTimeout (() =>
-      {
-        console.log("Whether Data");
-        resolve(200);
-      },2000);
-    });
-}
+// function api()
+// {
+//   return new Promise ((resolve,reject) =>
+//     {
+//       setTimeout (() =>
+//       {
+//         console.log("Whether Data");
+//         resolve(200);
+//       },2000);
+//     });
+// }
 
-async function getWhetherData() {
-  await api();
-}
+// async function getWhetherData() {
+//   await api();
+// }
 
-function getData(dataId)
-{
-  return new Promise ((resolve,reject) =>
-  {
-    setTimeout (()  =>{
-    console.log("Data",dataId);
-    resolve("Success");
-    },5000);
-  });
+// function getData(dataId)
+// {
+//   return new Promise ((resolve,reject) =>
+//   {
+//     setTimeout (()  =>{
+//     console.log("Data",dataId);
+//     resolve("Success");
+//     },5000);
+//   });
   
-}
+// }
+
+//Lecture No 13//
+
+const URL = "https://dog.ceo/api/breeds/image/random";
+
+const getFacts = async () =>
+{
+  console.log("Getting Data .....");
+let response  =await fetch(URL);
+console.log(response);
+let data = await response.json();
+console.log(data);
+};
