@@ -986,3 +986,19 @@ console.log(response);
 let data = await response.json();
 console.log(data);
 };
+
+//Extra Part They Are Not Covered//
+let inputValue = document.getElementById("name");
+function getValue()
+{
+  console.log(inputValue.value);
+}
+function setValue()
+{
+  let value = "SUMIT KHARAT";
+  document.getElementById('name').value=value;
+}
+function removeValue()
+{
+  document.getElementById('name').value='';
+}
